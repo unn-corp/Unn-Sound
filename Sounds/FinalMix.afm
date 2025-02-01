@@ -63,7 +63,7 @@ AudioOutputStateResClass {
   SignalClass {
    id 285709
    name "Signal Dynamic Range"
-   tl -752 -1473.667
+   tl -752 -1472
    res "{F51E46C7F783713E}Sounds/_SharedData/Signals/FinalMix/FinalMix_DynamicRange.sig"
    inputsport {
     1
@@ -107,7 +107,7 @@ AudioOutputStateResClass {
   SignalClass {
    id 306189
    name "Signal Dynamic Mix"
-   tl 32 -368.714
+   tl 32 -368
    res "{5D2709AA0854ACDC}Sounds/_SharedData/Signals/FinalMix/FinalMix_DynamicMix.sig"
    conns {
     IOPConnectionClass iopConnection {
@@ -346,7 +346,7 @@ AudioOutputStateResClass {
    id 180246
    name "COMP MASTER SFX"
    version 5
-   tl 1360 -36.206
+   tl 1360 -32
    ins {
     ConnectionsClass connections {
      id 3
@@ -362,7 +362,7 @@ AudioOutputStateResClass {
     9 0
    }
    DSPObject CompressorDSPTypeClass dsp {
-    attack 20
+    attack 30
     release 80
    }
   }
@@ -413,7 +413,7 @@ AudioOutputStateResClass {
    id 199702
    name "REVERB EXT"
    version 5
-   tl 465.111 1987.556
+   tl 464 2016
    pi {
     1 0
    }
@@ -430,7 +430,7 @@ AudioOutputStateResClass {
    id 200726
    name "LPF"
    version 5
-   tl 465.111 2147.556
+   tl 464 2176
    pi {
     1 0
    }
@@ -443,7 +443,7 @@ AudioOutputStateResClass {
    id 201750
    name "HPF"
    version 5
-   tl 465.111 2067.556
+   tl 464 2096
    pi {
     1 0
    }
@@ -457,7 +457,7 @@ AudioOutputStateResClass {
    id 296982
    name "Filter Reverb Small"
    version 5
-   tl 496 1065.175
+   tl 496 1072
    ins {
     ConnectionsClass connections {
      id 6
@@ -472,7 +472,7 @@ AudioOutputStateResClass {
    pi {
     67 0
    }
-   volume_dB 12
+   volume_dB 15
    DSPObject SmallRoomReverbDSPTypeClass dsp {
     earlyReflectionsTime 0.4
     lateReflectionsTime 0.7
@@ -568,7 +568,7 @@ AudioOutputStateResClass {
    id 317462
    name "Filter Distortion"
    version 5
-   tl 307.333 -1028.167
+   tl 304 -864
    pi {
     1 0
    }
@@ -582,7 +582,7 @@ AudioOutputStateResClass {
    id 318486
    name "Filter High Shelf"
    version 5
-   tl 307.333 -953.167
+   tl 304 -784
    pi {
     1 0
    }
@@ -758,7 +758,7 @@ AudioOutputStateResClass {
    id 202775
    name "Reverb EXT"
    version 5
-   tl 689.111 2026.94
+   tl 688 2080
    ins {
     ConnectionsClass connections {
      id 1
@@ -789,7 +789,7 @@ AudioOutputStateResClass {
     }
    }
    pi {
-    30 0
+    14 0
    }
    ports 3
   }
@@ -797,7 +797,7 @@ AudioOutputStateResClass {
    id 319511
    name "FilterChain 312"
    version 5
-   tl 299.833 -735.667
+   tl 304 -704
    ins {
     ConnectionsClass connections {
      id 1
@@ -817,9 +817,6 @@ AudioOutputStateResClass {
       }
      }
     }
-   }
-   pi {
-    14 0
    }
   }
   FilterChainClass {
@@ -957,19 +954,18 @@ AudioOutputStateResClass {
    id 7175
    name "WPN_Shots"
    tl -1264 -1808
-   volume 1.413
-   volume_dB 3
    type In
+   limit 12
    color 0.82 0.937 0.937 1
   }
   OBusClass {
    id 8199
    name "WPN_Explosions"
-   tl -1264 -1569.111
+   tl -1264 -1568
    varName "Explosions_SubMix"
    varResource "{A60F08955792B575}Sounds/_SharedData/Variables/GlobalVariables.conf"
-   volume 1.995
-   volume_dB 6
+   volume 1.413
+   volume_dB 3
    type In
    color 0.82 0.851 0.937 1
   }
@@ -1001,6 +997,8 @@ AudioOutputStateResClass {
    ""
    tl -1248 736
    ctl 0 -39.75
+   volume 1.995
+   volume_dB 6
    channels "2"
    type In
    color 0.875 0.655 0.655 1
@@ -1060,8 +1058,6 @@ AudioOutputStateResClass {
    comment "Add Reverb when camera InBuilding"
    tl -1264 16
    ctl 0 -21
-   volume 1.413
-   volume_dB 3
    type In
    limit 4
    color 0.765 0.875 0.655 1
@@ -1069,7 +1065,7 @@ AudioOutputStateResClass {
   OBusClass {
    id 70663
    name "VEH_Engine"
-   tl -1248 -513
+   tl -1248 -512
    volume 1.995
    volume_dB 6
    type In
@@ -1105,8 +1101,8 @@ AudioOutputStateResClass {
    id 152583
    name "SFX_Reverb"
    tl -1248 1456
-   volume 1.995
-   volume_dB 6
+   volume 1.413
+   volume_dB 3
    type In
    color 0.506 0.812 0.584 1
   }
@@ -1169,6 +1165,8 @@ AudioOutputStateResClass {
    comment "Exterior Only"
    tl -1248 832
    ctl 0 -21
+   volume 1.995
+   volume_dB 6
    type In
    limit 16
    color 0.875 0.82 0.655 1
@@ -1176,7 +1174,7 @@ AudioOutputStateResClass {
   OBusClass {
    id 184327
    name "WPN_SonicCracks"
-   tl -1265.25 -912
+   tl -1264 -912
    ins {
     ConnectionsClass connections {
      id 1
@@ -1216,7 +1214,7 @@ AudioOutputStateResClass {
   OBusClass {
    id 197639
    name "SFX_Reverb_Exterior"
-   tl -1262.889 2146.444
+   tl -1264 2176
    volume 1.995
    volume_dB 6
    type In
@@ -1233,7 +1231,7 @@ AudioOutputStateResClass {
   OBusClass {
    id 204807
    name "ENV_AMB_3D_Reverb_Exterior"
-   tl -1262.889 2259.556
+   tl -1264 2288
    ins {
     ConnectionsClass connections {
      id 1
@@ -1263,32 +1261,30 @@ AudioOutputStateResClass {
    id 300039
    name "SFX_Reverb_Small"
    tl -1248 1616
-   volume 1.995
-   volume_dB 6
+   volume 1.413
+   volume_dB 3
    type In
   }
   OBusClass {
    id 301063
    name "SFX_Reverb_Medium"
    tl -1248 1696
-   volume 1.995
-   volume_dB 6
+   volume 1.413
+   volume_dB 3
    type In
   }
   OBusClass {
    id 302087
    name "SFX_Reverb_Large"
    tl -1248 1776
-   volume 1.995
-   volume_dB 6
+   volume 1.413
+   volume_dB 3
    type In
   }
   OBusClass {
    id 326663
    name "WPN_Shots_Player"
-   tl -1264 -1668.206
-   volume 1.413
-   volume_dB 3
+   tl -1264 -1664
    type In
    color 0.82 0.937 0.937 1
   }
@@ -1355,7 +1351,7 @@ AudioOutputStateResClass {
     }
    }
    thresholdMax -24
-   maxGainReduction -10
+   maxGainReduction -8
    attack 200
    release 400
   }
@@ -1512,19 +1508,19 @@ AudioOutputStateResClass {
    Color 0.6 0.6 0.6 0.251
   }
   GroupClass {
-   id 338947
-   name "Vibrations"
+   id 307203
+   name "Reverb EXT"
    children {
-    329760 337942 330784 335894 336919 328736 327711 333846 334870
+    200726 201750 250912 199702 197639 204807 202775
    }
    parent -1
    Color 0.6 0.6 0.6 0.251
   }
   GroupClass {
-   id 348163
-   name "Reverb EXT"
+   id 338947
+   name "Vibrations"
    children {
-    202775 200726 250912 199702 345110 204807 197639 201750
+    329760 337942 330784 335894 336919 328736 327711 333846 334870
    }
    parent -1
    Color 0.6 0.6 0.6 0.251
@@ -1627,7 +1623,7 @@ AudioOutputStateResClass {
   OBusOutClass {
    id 327711
    name "Output Internal"
-   tl 848.833 -2527.167
+   tl 848 -2528
    ins {
     ConnectionsClass connections {
      id 64
@@ -1647,7 +1643,7 @@ AudioOutputStateResClass {
   OBusInOutClass {
    id 224288
    name "SFX Master"
-   tl 1536 172.75
+   tl 1536 176
    ins {
     ConnectionsClass connections {
      id 1
@@ -1675,8 +1671,6 @@ AudioOutputStateResClass {
    pi {
     2 0
    }
-   volume 0.708
-   volume_dB -3
   }
   OBusInOutClass {
    id 225312
@@ -1746,7 +1740,7 @@ AudioOutputStateResClass {
   OBusInOutClass {
    id 233504
    name "WNP_BulletHits + WPN_SonicCracks"
-   tl -1024 -961.25
+   tl -1024 -960
    ins {
     ConnectionsClass connections {
      id 1
@@ -1778,7 +1772,7 @@ AudioOutputStateResClass {
   OBusInOutClass {
    id 235552
    name "ENV_Ambients"
-   tl -752 767
+   tl -752 768
    ins {
     ConnectionsClass connections {
      id 0
@@ -1824,8 +1818,6 @@ AudioOutputStateResClass {
    pi {
     7 0
    }
-   volume 3.981
-   volume_dB 12
   }
   OBusInOutClass {
    id 242720
@@ -1980,13 +1972,11 @@ AudioOutputStateResClass {
    }
    varName "Submix_L4"
    varResource "{A60F08955792B575}Sounds/_SharedData/Variables/GlobalVariables.conf"
-   volume 1.413
-   volume_dB 3
   }
   OBusInOutClass {
    id 250912
    name "Reverb EXT"
-   tl 689.111 2179.556
+   tl 688 2208
    ins {
     ConnectionsClass connections {
      id 1
@@ -2411,7 +2401,7 @@ AudioOutputStateResClass {
   OBusInOutClass {
    id 305184
    name "Bus Reverb Medium"
-   tl 496 1453.778
+   tl 496 1456
    ins {
     ConnectionsClass connections {
      id 0
@@ -2587,7 +2577,7 @@ AudioOutputStateResClass {
   OBusInOutClass {
    id 328736
    name "Bus Explosions"
-   tl 416 -2595.889
+   tl 416 -2592
    ins {
     ConnectionsClass connections {
      id 1
@@ -2611,13 +2601,11 @@ AudioOutputStateResClass {
    pi {
     2 0
    }
-   volume 1.413
-   volume_dB 3
   }
   OBusInOutClass {
    id 329760
    name "Bus Shots"
-   tl 416 -2259.409
+   tl 416 -2256
    ins {
     ConnectionsClass connections {
      id 1
@@ -2641,13 +2629,11 @@ AudioOutputStateResClass {
    pi {
     2 0
    }
-   volume 1.413
-   volume_dB 3
   }
   OBusInOutClass {
    id 330784
    name "Bus Mix"
-   tl 640 -2530.778
+   tl 640 -2528
    ins {
     ConnectionsClass connections {
      id 1
