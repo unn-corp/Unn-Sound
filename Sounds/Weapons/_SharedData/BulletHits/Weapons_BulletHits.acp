@@ -1,0 +1,6272 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 79885
+   name "BulletHits_Ricochets"
+   tl -2592 -224
+   res "{DBE80DE5046D00C7}Sounds/Weapons/_SharedData/BulletHits/BulletHits_Ricochets.sig"
+   inputsport {
+    15
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    2
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    3
+   }
+   path "{DBE80DE5046D00C7}Sounds/Weapons/_SharedData/BulletHits/BulletHits_Ricochets.sig"
+  }
+  SignalClass {
+   id 100365
+   name "BulletHits_Speed"
+   tl -2064 -496
+   res "{601E31D7F84B2DBD}Sounds/Weapons/_SharedData/BulletHits/BulletHits_Speed.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2 14 17
+   }
+   inputvalues {
+    331.5
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    2000
+   }
+   path "{601E31D7F84B2DBD}Sounds/Weapons/_SharedData/BulletHits/BulletHits_Speed.sig"
+  }
+  SignalClass {
+   id 109581
+   name "BulletHits"
+   tl -3350.333 -2106.75
+   res "{998EC12F9B0130B4}Sounds/Weapons/_SharedData/BulletHits/BulletHits.sig"
+   inputsport {
+    1 5
+   }
+   outputsport {
+    2 3 7 9 13
+   }
+   inputvalues {
+    6160 331.5
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    10000 1000
+   }
+   path "{998EC12F9B0130B4}Sounds/Weapons/_SharedData/BulletHits/BulletHits.sig"
+  }
+  SignalClass {
+   id 302093
+   name "RandomChance"
+   tl -3350.333 -2548.714
+   res "{33447DCE4959C32C}Sounds/_SharedData/Signals/SimpleHelpers/RandomChance.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 303116
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 10
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 303116
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    2 10
+   }
+   outputsport {
+    1 9
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{33447DCE4959C32C}Sounds/_SharedData/Signals/SimpleHelpers/RandomChance.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 97289
+   name "SOUND_HIT"
+   comment "Plays for general bullet hits"
+   version 5
+   tl -856.315 -365
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 14
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 89106
+       port 65
+      }
+      ConnectionClass connection {
+       id 162834
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    50 0
+   }
+   priority 60
+   outState 224267
+   outStatePort 9223
+   bypassVolumeTest 1
+   speedOfSoundSimulation 1
+   static 1
+  }
+  SoundClass {
+   id 217097
+   name "SOUND_LOCAL_HIT_CHAR"
+   version 5
+   tl -853.22 6584.762
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 216082
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   priority 60
+   outState 224267
+   outStatePort 9223
+   bypassVolumeTest 1
+   static 1
+  }
+  SoundClass {
+   id 270345
+   name "SOUND_HIT_VEHICLE"
+   comment "Plays if a vehicle was hit"
+   version 5
+   tl -856.315 -1450.667
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 14
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 276498
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    50 0
+   }
+   priority 60
+   outState 224267
+   outStatePort 9223
+   bypassVolumeTest 1
+   speedOfSoundSimulation 1
+   static 1
+  }
+  SoundClass {
+   id 271369
+   name "SOUND_LOCAL_HIT_VEHICLE"
+   comment "Plays if the player's vehicle was hit"
+   version 5
+   tl -856.315 -2338.308
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 14
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 277522
+       port 65
+      }
+      ConnectionClass connection {
+       id 267282
+       port 65
+      }
+      ConnectionClass connection {
+       id 294930
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    50 0
+   }
+   priority 60
+   outState 224267
+   outStatePort 18439
+   bypassVolumeTest 1
+   speedOfSoundSimulation 1
+   static 1
+  }
+ }
+ buses {
+  BusClass {
+   id 304135
+   name "1P Bus"
+   version 7
+   tl -1542 -2326.308
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 13
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 254982
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+  BusClass {
+   id 305159
+   name "1P Bus StereoLayer"
+   version 7
+   tl -1542 -2582
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 13
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 295942
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+  BusClass {
+   id 306183
+   name "3P Bus"
+   version 7
+   tl -1542 -2129.813
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 9
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 273414
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+ }
+ selectors {
+  SelectorClass {
+   id 110598
+   name "Bullet Surface Selector"
+   version 5
+   tl -2832.431 560.587
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 147509
+     links {
+      ConnectionClass connection {
+       id 125956
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5213379
+     links {
+      ConnectionClass connection {
+       id 101380
+       port 65
+      }
+      ConnectionClass connection {
+       id 144388
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5677506
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5962058
+     links {
+      ConnectionClass connection {
+       id 117764
+       port 65
+      }
+      ConnectionClass connection {
+       id 149508
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5979911
+     links {
+      ConnectionClass connection {
+       id 125956
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5981047
+     links {
+      ConnectionClass connection {
+       id 150532
+       port 65
+      }
+      ConnectionClass connection {
+       id 98308
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 6183873
+     links {
+      ConnectionClass connection {
+       id 123908
+       port 65
+      }
+      ConnectionClass connection {
+       id 152580
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 15355468
+     links {
+      ConnectionClass connection {
+       id 275460
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 71029724
+     links {
+      ConnectionClass connection {
+       id 80900
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 71828185
+     links {
+      ConnectionClass connection {
+       id 136196
+       port 65
+      }
+      ConnectionClass connection {
+       id 103428
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 176733797
+     links {
+      ConnectionClass connection {
+       id 119812
+       port 65
+      }
+      ConnectionClass connection {
+       id 143364
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 189589735
+     links {
+      ConnectionClass connection {
+       id 192516
+       port 65
+      }
+      ConnectionClass connection {
+       id 191492
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 196777574
+     links {
+      ConnectionClass connection {
+       id 230404
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 198646270
+     links {
+      ConnectionClass connection {
+       id 129028
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 209562003
+     links {
+      ConnectionClass connection {
+       id 121860
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 221560393
+     links {
+      ConnectionClass connection {
+       id 90116
+       port 65
+      }
+      ConnectionClass connection {
+       id 137220
+       port 65
+      }
+      ConnectionClass connection {
+       id 151556
+       port 65
+      }
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 203780
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 222872945
+     links {
+      ConnectionClass connection {
+       id 201732
+       port 65
+      }
+      ConnectionClass connection {
+       id 192516
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 228101155
+     links {
+      ConnectionClass connection {
+       id 130052
+       port 65
+      }
+      ConnectionClass connection {
+       id 153604
+       port 65
+      }
+      ConnectionClass connection {
+       id 209924
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 331434164
+     links {
+      ConnectionClass connection {
+       id 128004
+       port 65
+      }
+      ConnectionClass connection {
+       id 145412
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 431110810
+     links {
+      ConnectionClass connection {
+       id 239620
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 520987214
+     links {
+      ConnectionClass connection {
+       id 90116
+       port 65
+      }
+      ConnectionClass connection {
+       id 151556
+       port 65
+      }
+      ConnectionClass connection {
+       id 203780
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 577277229
+     links {
+      ConnectionClass connection {
+       id 200708
+       port 65
+      }
+      ConnectionClass connection {
+       id 152580
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 813280885
+     links {
+      ConnectionClass connection {
+       id 135172
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 817550331
+     links {
+      ConnectionClass connection {
+       id 143364
+       port 65
+      }
+      ConnectionClass connection {
+       id 119812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 833026888
+     links {
+      ConnectionClass connection {
+       id 93188
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 907634268
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+      ConnectionClass connection {
+       id 199684
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 907634269
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+      ConnectionClass connection {
+       id 199684
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 907634270
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+      ConnectionClass connection {
+       id 199684
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 918709709
+     links {
+      ConnectionClass connection {
+       id 92164
+       port 65
+      }
+      ConnectionClass connection {
+       id 147460
+       port 65
+      }
+      ConnectionClass connection {
+       id 203780
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1049971313
+     links {
+      ConnectionClass connection {
+       id 96260
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1077246130
+     links {
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 312324
+       port 65
+      }
+      ConnectionClass connection {
+       id 314372
+       port 65
+      }
+      ConnectionClass connection {
+       id 313348
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1098378837
+     links {
+      ConnectionClass connection {
+       id 227332
+       port 65
+      }
+      ConnectionClass connection {
+       id 137220
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1134139407
+     links {
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 315396
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1188100446
+     links {
+      ConnectionClass connection {
+       id 131076
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1278189143
+     links {
+      ConnectionClass connection {
+       id 225284
+       port 65
+      }
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1424542103
+     links {
+      ConnectionClass connection {
+       id 88068
+       port 65
+      }
+      ConnectionClass connection {
+       id 139268
+       port 65
+      }
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 203780
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1443335035
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 146436
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1443335036
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+      ConnectionClass connection {
+       id 146436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1443335037
+     links {
+      ConnectionClass connection {
+       id 104452
+       port 65
+      }
+      ConnectionClass connection {
+       id 197636
+       port 65
+      }
+      ConnectionClass connection {
+       id 146436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1514773465
+     links {
+      ConnectionClass connection {
+       id 107524
+       port 65
+      }
+      ConnectionClass connection {
+       id 140292
+       port 65
+      }
+      ConnectionClass connection {
+       id 137220
+       port 65
+      }
+      ConnectionClass connection {
+       id 203780
+       port 65
+      }
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1518370703
+     links {
+      ConnectionClass connection {
+       id 87044
+       port 65
+      }
+      ConnectionClass connection {
+       id 148484
+       port 65
+      }
+      ConnectionClass connection {
+       id 205828
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1524216099
+     links {
+      ConnectionClass connection {
+       id 112644
+       port 65
+      }
+      ConnectionClass connection {
+       id 137220
+       port 65
+      }
+      ConnectionClass connection {
+       id 141316
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1624862704
+     links {
+      ConnectionClass connection {
+       id 138244
+       port 65
+      }
+      ConnectionClass connection {
+       id 316420
+       port 65
+      }
+      ConnectionClass connection {
+       id 317444
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1687138998
+     links {
+      ConnectionClass connection {
+       id 91140
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1779617549
+     links {
+      ConnectionClass connection {
+       id 96260
+       port 65
+      }
+      ConnectionClass connection {
+       id 137220
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2144845644
+     links {
+      ConnectionClass connection {
+       id 131076
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass default {
+     max 990
+    }
+    PortClass asphalt {
+     min 990
+     max 1200
+    }
+    PortClass concrete {
+     min 1200
+     max 1300
+    }
+    PortClass cobblestones {
+     min 1300
+     max 1400
+    }
+    PortClass stone {
+     min 1500
+     max 1600
+    }
+    PortClass dirt {
+     min 2000
+     max 2300
+    }
+    PortClass soil {
+     min 2300
+     max 2310
+    }
+    PortClass forest_conifer {
+     min 2310
+     max 2312
+    }
+    PortClass gravel {
+     min 2500
+     max 2800
+    }
+    PortClass sand {
+     min 2800
+     max 3000
+    }
+    PortClass grass_short_1 {
+     min 3000
+     max 3111
+    }
+    PortClass grass_short_2 {
+     min 3120
+     max 3121
+    }
+    PortClass grass_short_3 {
+     min 3122
+     max 3140
+    }
+    PortClass moss {
+     min 3800
+     max 4000
+    }
+    PortClass grass_tall_1 {
+     min 3111
+     max 3112
+    }
+    PortClass grass_tall_2 {
+     min 3121
+     max 3122
+    }
+    PortClass grass_tall_3 {
+     min 3140
+     max 3800
+    }
+    PortClass snow {
+     min 4000
+     max 4500
+    }
+    PortClass ice {
+     min 4500
+     max 5000
+    }
+    PortClass wood {
+     min 5000
+     max 5120
+    }
+    PortClass wood_logs {
+     min 5120
+     max 5130
+    }
+    PortClass wooden_weapon {
+     min 5130
+     max 6000
+    }
+    PortClass metal {
+     min 6000
+     max 6120
+    }
+    PortClass metal_grid {
+     min 6120
+     max 6130
+    }
+    PortClass glass {
+     min 7000
+     max 7200
+    }
+    PortClass rubber {
+     min 7200
+     max 7300
+    }
+    PortClass plastic {
+     min 7300
+     max 7310
+    }
+    PortClass default_1 {
+     min 7330
+     max 7400
+    }
+    PortClass fabric {
+     min 7400
+     max 7420
+    }
+    PortClass tiles {
+     min 7600
+     max 7990
+    }
+    PortClass forest_deciduous {
+     min 2312
+     max 2500
+    }
+    PortClass metal_wire {
+     min 6130
+     max 6140
+    }
+    PortClass fabric_military {
+     min 7420
+     max 7430
+    }
+    PortClass flesh {
+     min 9000
+     max 10000
+    }
+    PortClass water {
+     min 8000
+     max 9000
+    }
+    PortClass weapon_metal {
+     min 6140
+     max 6150
+    }
+    PortClass weapon_default {
+     min 7430
+     max 7600
+    }
+    PortClass metalArmor {
+     min 6170
+     max 6900
+    }
+    PortClass brick {
+     min 1600
+     max 1610
+    }
+    PortClass stone_2 {
+     min 1610
+     max 2000
+    }
+    PortClass Titanium {
+     min 6991
+     max 6992
+    }
+    PortClass Helmet_RU {
+     min 6990
+     max 6991
+    }
+    PortClass Aramid {
+     min 7990
+     max 7991
+    }
+    PortClass Gadget_Metal {
+     min 6150
+     max 6160
+    }
+    PortClass Gadget_Plastic {
+     min 7320
+     max 7330
+    }
+    PortClass Gadget_Shovel {
+     min 6160
+     max 6170
+    }
+   }
+  }
+  SelectorClass : "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf" {
+   id 168966
+   name "Impact Type"
+   version 5
+   tl -2592 -160
+   ctl 0 -21
+   parent "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 79885
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 115262211
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 696573286
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1387311397
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+      ConnectionClass connection {
+       id 84996
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Regular {
+    }
+    PortClass Ricochet {
+     volume_dB -3
+    }
+    PortClass WentThrough {
+    }
+   }
+  }
+  SelectorClass {
+   id 226310
+   name "Surface Selector"
+   version 5
+   tl -2592 -860.547
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 136804422
+     links {
+      ConnectionClass connection {
+       id 161796
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 431110810
+     links {
+      ConnectionClass connection {
+       id 240644
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1098378837
+     links {
+      ConnectionClass connection {
+       id 228356
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1278189143
+     links {
+      ConnectionClass connection {
+       id 229380
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1280751085
+     links {
+      ConnectionClass connection {
+       id 248837
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Flesh {
+     min 9000
+     max 10000
+    }
+    PortClass Titanium {
+     min 6991
+     max 6992
+    }
+    PortClass Helmet_RU {
+     min 6990
+     max 6991
+    }
+    PortClass Default {
+     min 6998
+     max 6999
+     default 1
+    }
+    PortClass Aramid {
+     min 7990
+     max 7991
+    }
+   }
+  }
+  SelectorClass {
+   id 242694
+   name "Flesh / Kevlar"
+   version 5
+   tl -2829.336 6590.762
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 136804422
+     links {
+      ConnectionClass connection {
+       id 220164
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1101248349
+     links {
+      ConnectionClass connection {
+       id 241668
+       port 65
+      }
+     }
+    }
+   }
+   ports {
+    PortClass Flesh {
+     min 9000
+     max 10000
+     default 1
+    }
+    PortClass Kevlar {
+     min 7990
+     max 7991
+    }
+   }
+  }
+  SelectorClass {
+   id 252934
+   name "BulletSpeedSelector"
+   version 5
+   tl -2064 -384
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 285165922
+     links {
+      ConnectionClass connection {
+       id 114692
+       port 65
+      }
+      ConnectionClass connection {
+       id 115736
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 547696271
+     links {
+      ConnectionClass connection {
+       id 187396
+       port 65
+      }
+      ConnectionClass connection {
+       id 307224
+       port 65
+      }
+     }
+    }
+   }
+   ports {
+    PortClass SubSonic {
+     max 340
+    }
+    PortClass SuperSonic {
+     min 340
+     max 9999
+     default 1
+    }
+   }
+  }
+  SelectorClass : "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf" {
+   id 254982
+   comment "Play specific interior sounds for certain vehicles and materials, otherwise play regular vehicle BulletHits"
+   version 5
+   tl -2052.5 -2350.308
+   ctl 0 -21
+   parent "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 92012
+     links {
+      ConnectionClass connection {
+       id 259076
+       port 65
+      }
+      ConnectionClass connection {
+       id 283654
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 95426
+     links {
+      ConnectionClass connection {
+       id 273414
+       port 65
+      }
+      ConnectionClass connection {
+       id 283654
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1280751085
+     links {
+      ConnectionClass connection {
+       id 273414
+       port 65
+      }
+     }
+    }
+   }
+  }
+  SelectorClass : "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf" {
+   id 273414
+   comment "Play specific sounds for certain material(s), otherwise use default BulletHits"
+   version 5
+   tl -2052.5 -1455.667
+   ctl 0 -21
+   parent "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 92012
+     links {
+      ConnectionClass connection {
+       id 252934
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 95426
+     links {
+      ConnectionClass connection {
+       id 291864
+       port 65
+      }
+      ConnectionClass connection {
+       id 292870
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1280751085
+     links {
+      ConnectionClass connection {
+       id 252934
+       port 65
+      }
+     }
+    }
+   }
+   ports {
+    PortClass Default {
+     min -1
+    }
+    PortClass Car {
+     max 6200
+    }
+    PortClass APC {
+    }
+   }
+  }
+  SelectorClass : "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf" {
+   id 283654
+   name "Impact Type"
+   version 5
+   tl -2592 -2153.813
+   ctl 0 -21
+   parent "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 79885
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 115262211
+     links {
+      ConnectionClass connection {
+       id 286726
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 696573286
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1387311397
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Regular {
+    }
+    PortClass Ricochet {
+     volume_dB -3
+    }
+    PortClass WentThrough {
+    }
+   }
+  }
+  SelectorClass : "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf" {
+   id 286726
+   version 5
+   tl -2832.431 -2153.813
+   parent "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 92012
+     links {
+      ConnectionClass connection {
+       id 285700
+       port 65
+      }
+      ConnectionClass connection {
+       id 282628
+       port 65
+      }
+      ConnectionClass connection {
+       id 297988
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 95426
+     links {
+      ConnectionClass connection {
+       id 282628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1280751085
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+   }
+  }
+  SelectorClass {
+   id 292870
+   name "BulletSpeedSelector"
+   version 5
+   tl -2592 -1294.286
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 285165922
+     links {
+      ConnectionClass connection {
+       id 114692
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 547696271
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+   }
+   ports {
+    PortClass SubSonic {
+     max 340
+    }
+    PortClass SuperSonic {
+     min 340
+     max 9999
+     default 1
+    }
+   }
+  }
+  SelectorClass : "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf" {
+   id 295942
+   comment "Play specific interior sounds for certain vehicles and materials, otherwise play regular vehicle BulletHits"
+   version 5
+   tl -2052.5 -2606
+   ctl 0 -21
+   parent "{4DA5A5F01DF181A0}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHits_VehicleTypes.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 92012
+     links {
+      ConnectionClass connection {
+       id 293892
+       port 65
+      }
+      ConnectionClass connection {
+       id 299014
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 95426
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1280751085
+     links {
+      ConnectionClass connection {
+       id 284677
+       port 65
+      }
+     }
+    }
+   }
+  }
+  SelectorClass : "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf" {
+   id 299014
+   name "Impact Type"
+   version 5
+   tl -2592 -2606
+   ctl 0 -21
+   parent "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 79885
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 115262211
+     links {
+      ConnectionClass connection {
+       id 301060
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 696573286
+     links {
+      ConnectionClass connection {
+       id 300037
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1387311397
+     links {
+      ConnectionClass connection {
+       id 300037
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Regular {
+    }
+    PortClass Ricochet {
+     volume_dB -3
+    }
+    PortClass WentThrough {
+    }
+   }
+  }
+  SelectorClass : "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf" {
+   id 308230
+   name "Impact Type"
+   version 5
+   tl -2592 16
+   ctl 0 -21
+   parent "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 79885
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 115262211
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 696573286
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1387311397
+     links {
+      ConnectionClass connection {
+       id 110598
+       port 65
+      }
+      ConnectionClass connection {
+       id 156676
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Regular {
+    }
+    PortClass Ricochet {
+     volume_dB -3
+    }
+    PortClass WentThrough {
+    }
+   }
+  }
+  SelectorClass : "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf" {
+   id 310278
+   name "Impact Type"
+   version 5
+   tl -2592 -1463.333
+   ctl 0 -21
+   parent "{DAA4AEFC9C90C0F8}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletHit_ImpactType.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 79885
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 115262211
+     links {
+      ConnectionClass connection {
+       id 309252
+       port 65
+      }
+      ConnectionClass connection {
+       id 311300
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 696573286
+     links {
+      ConnectionClass connection {
+       id 274436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1387311397
+     links {
+      ConnectionClass connection {
+       id 274436
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Regular {
+    }
+    PortClass Ricochet {
+     volume_dB -3
+    }
+    PortClass WentThrough {
+    }
+   }
+  }
+ }
+ generators {
+  GeneratorClass {
+   id 247813
+   name "Silence"
+   comment "Add PreSilence if projectile is subSonic"
+   version 5
+   tl -2352 -240
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   function Silence
+   time 0
+  }
+  GeneratorClass {
+   id 248837
+   name "Silence"
+   version 5
+   tl -3040.385 -667.916
+   function Silence
+   time 0
+  }
+  GeneratorClass {
+   id 284677
+   name "Silence"
+   version 5
+   tl -3040.385 -2281.232
+   ctl 0 -21
+   function Silence
+   time 0
+  }
+  GeneratorClass {
+   id 300037
+   name "Silence"
+   version 5
+   tl -2592 -2672.428
+   ctl 0 -21
+   function Silence
+   time 0
+  }
+ }
+ mixers {
+  MixerClass {
+   id 224267
+   name "FinalMix"
+   version 4
+   tl -661.5 -353
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 9223
+     links {
+      ConnectionClass connection {
+       id 97289
+       port 65
+      }
+      ConnectionClass connection {
+       id 217097
+       port 65
+      }
+      ConnectionClass connection {
+       id 270345
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 18439
+     links {
+      ConnectionClass connection {
+       id 271369
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 152583
+    }
+   }
+   pi {
+    32904 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 303116
+   name "Constant 296"
+   version 5
+   tl -3551.111 -2548.714
+   "Constant values" {
+    IOPConstantsValueClass "CHANCE_FLOAT_0-1" {
+     Key "CHANCE_FLOAT_0-1"
+     Value 0.5
+     Port 1
+    }
+    IOPConstantsValueClass CUSTOM_MAXVALUE {
+     Key "CUSTOM_MAXVALUE"
+     Port 2
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 89106
+   name "MainImpact Shader"
+   version 5
+   tl -1187 -368.118
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 118812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 83987
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154645
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 252934
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 162834
+   name "PlayerImpact Shader"
+   comment "Special sounds for when the player gets hit"
+   version 5
+   tl -1187 -819.214
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 118812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 163859
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154645
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 226310
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 216082
+   name "SOUND_LOCAL_HIT_CHAR"
+   version 5
+   tl -1183.905 6560.762
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 218140
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 222227
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 221205
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 242694
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 267282
+   name "InCabinImpact Shader"
+   version 5
+   tl -1187 -2338.308
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 118812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 83987
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 304135
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  ShaderClass {
+   id 276498
+   name "VehicleImpact Shader"
+   version 5
+   tl -1187 -1462.667
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 118812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 83987
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154645
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 273414
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 277522
+   name "VehicleImpact 3P Shader"
+   version 5
+   tl -1187 -2153.813
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 118812
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 83987
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154645
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 306183
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 294930
+   name "InCabinImpact Stereo Shader"
+   version 5
+   tl -1187 -2582
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 83987
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 305159
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-40LUFS.conf" {
+   id 83987
+   comment "Voice"
+   version 5
+   tl -1187 -447.145
+   ctl 0 -21
+   parent "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-40LUFS.conf"
+  }
+  AmplitudeClass {
+   id 163859
+   name "Amplitude 32"
+   version 5
+   tl -1187 -888.583
+   curve Linear
+   innerRange 1.3
+   outerRange 1.4
+  }
+  AmplitudeClass {
+   id 222227
+   name "Amplitude 218"
+   version 5
+   tl -1183.905 6424.701
+   curve Linear
+   innerRange 10
+   outerRange 26
+  }
+ }
+ frequency {
+  FrequencyClass {
+   id 154645
+   name "Frequency 152"
+   version 5
+   tl -1187 -582.31
+   enableDistanceAtt 1
+   type LowPass
+   innerRange 3
+   outerRange 40
+   cutOffMin 4300
+  }
+  FrequencyClass {
+   id 221205
+   name "Frequency 219"
+   version 5
+   tl -1183.905 6495.288
+  }
+ }
+ playlist {
+  PlaylistClass {
+   id 115736
+   name "Playlist Prewoosh"
+   version 5
+   tl -2352 -176
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 247813
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 168966
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    6 0
+   }
+  }
+  PlaylistClass {
+   id 291864
+   name "Playlist Subsonic"
+   version 5
+   tl -2338.75 -1420
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 247813
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 310278
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    6 0
+   }
+  }
+  PlaylistClass {
+   id 307224
+   name "Playlist Prewoosh"
+   version 5
+   tl -2352 -80
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 247813
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 308230
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    6 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 80900
+   name "Metal_Grid"
+   version 7
+   tl -3040.385 2040.316
+   Volume 2
+   Pitch -0.5
+   "Pitch variance" 0.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AA13647F51796562}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{330DDDE64C9E54F2}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4407B56EB83CBB82}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{43C04F3FDEBA0141}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{34CA27B72A18EE31}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ADD49E2E37FFDFA1}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Stick_06.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 84996
+   name "Ricochets SubSonic"
+   version 7
+   tl -3040.385 -110.417
+   Volume 8
+   Pitch -4
+   "Pitch variance" 4
+   Offset 30
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E70203586309B65F}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7E1CBAC17EEE87CF}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0916D2498A4C68BF}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0ED12818ECCAD27C}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{79DB409018683D0C}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E0C5F909058F0C9C}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{97CF9181F12DE3EC}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EF4A0DABC882791A}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{984065233C20966A}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_09.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{64002C489A76315B}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_10.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{130A44C06ED4DE2B}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_11.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8A14FD597333EFBB}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_12.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 87044
+   name "Leaves_Dry"
+   version 7
+   tl -3040.385 2674.305
+   Volume -2
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9A4578EE533C6D0F}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{035BC1774EDB5C9F}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7451A9FFBA79B3EF}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{739653AEDCFF092C}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{74B6C67568082941}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_05.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 88068
+   name "Concrete"
+   version 7
+   tl -3040.385 728.908
+   Volume 6
+   "Pitch variance" 3
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D65A363206FBADB5}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4F448FAB1B1C9C25}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{384EE723EFBE7355}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3F891D728938C996}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{488375FA7D9A26E6}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D19DCC63607D1776}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A697A4EB94DFF806}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DE1238C1AD7062F0}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A918504959D28D80}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_09.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{55581922FF842AB1}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_10.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{225271AA0B26C5C1}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_11.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB4CC83316C1F451}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_12.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 90116
+   name "Stone"
+   version 7
+   tl -3040.385 912.906
+   Volume -3
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{52C3D4C6E5BFD6B0}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CBDD6D5FF858E720}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BCD705D70CFA0850}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB10FF866A7CB293}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CC1A970E9EDE5DE3}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{55042E9783396C73}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{220E461F779B8303}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5A8BDA354E3419F5}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2D81B2BDBA96F685}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_09.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 91140
+   name "Rubber"
+   version 7
+   tl -3040.385 2221.456
+   Volume -4
+   Pitch -4
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A3A42BAB1D4ED4DA}Sounds/Weapons/_SharedData/BulletHits/samples/Rubber_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3ABA923200A9E54A}Sounds/Weapons/_SharedData/BulletHits/samples/Rubber_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4DB0FABAF40B0A3A}Sounds/Weapons/_SharedData/BulletHits/samples/Rubber_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A7700EB928DB0F9}Sounds/Weapons/_SharedData/BulletHits/samples/Rubber_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3D7D6863662F5F89}Sounds/Weapons/_SharedData/BulletHits/samples/Rubber_05.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 92164
+   name "Gravel"
+   version 7
+   tl -3040.385 1183.187
+   Volume -6
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{265074665123CF8B}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BF4ECDFF4CC4FE1B}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C844A577B866116B}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CF835F26DEE0ABA8}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B88937AE2A4244D8}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{21978E3737A57548}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{569DE6BFC3079A38}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2E187A95FAA800CE}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3DBF6E0EC7B4134E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A4A1D797DA5322DE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D3ABBF1F2EF1CDAE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D46C454E4877776D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A3662DC6BCD5981D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3A78945FA132A98D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4D72FCD7559046FD}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{35F760FD6C3FDC0B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{42FD0875989D337B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BEBD411E3ECB944A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_10.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C9B72996CA697B3A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_11.wav"
+     Index 18
+    }
+   }
+  }
+  BankLocalClass {
+   id 93188
+   name "Plastic"
+   version 7
+   tl -3040.385 2310.026
+   Volume 7
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7738296D3751FD99}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EE2690F42AB6CC09}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{992CF87CDE142379}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9EEB022DB89299BA}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E9E16AA54C3076CA}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{70FFD33C51D7475A}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{07F5BBB4A575A82A}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7F70279E9CDA32DC}Sounds/Weapons/_SharedData/BulletHits/samples/Plastic_08.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 96260
+   name "Default"
+   version 7
+   tl -3040.385 552.054
+   Volume -12
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0BB50CF06A85A428}Sounds/Weapons/_SharedData/BulletHits/samples/Default_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{92ABB569776295B8}Sounds/Weapons/_SharedData/BulletHits/samples/Default_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E5A1DDE183C07AC8}Sounds/Weapons/_SharedData/BulletHits/samples/Default_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E26627B0E546C00B}Sounds/Weapons/_SharedData/BulletHits/samples/Default_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{956C4F3811E42F7B}Sounds/Weapons/_SharedData/BulletHits/samples/Default_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0C72F6A10C031EEB}Sounds/Weapons/_SharedData/BulletHits/samples/Default_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7B789E29F8A1F19B}Sounds/Weapons/_SharedData/BulletHits/samples/Default_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3503B962A9AA9B36}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_01.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AC1D00FBB44DAAA6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_02.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DB17687340EF45D6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_03.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCD092222669FF15}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_04.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABDAFAAAD2CB1065}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_05.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{32C44333CF2C21F5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_06.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{45CE2BBB3B8ECE85}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_07.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3D4BB79102215473}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_08.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A41DF19F683BB03}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_09.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B601967250D51C32}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_10.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C10BFEFAA477F342}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_11.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{58154763B990C2D2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_12.wav"
+     Index 18
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2F1F2FEB4D322DA2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_13.wav"
+     Index 19
+    }
+    AudioBankSampleClass Sample {
+     Filename "{28D8D5BA2BB49761}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_14.wav"
+     Index 20
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5FD2BD32DF167811}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_15.wav"
+     Index 21
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C6CC04ABC2F14981}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_16.wav"
+     Index 22
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1C66C233653A6F1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_17.wav"
+     Index 23
+    }
+   }
+  }
+  BankLocalClass {
+   id 98308
+   name "Soil"
+   version 7
+   tl -3040.385 1364.326
+   Volume -4
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E97300233586FBD7}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{706DB9BA2861CA47}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0767D132DCC32537}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{00A02B63BA459FF4}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{77AA43EB4EE77084}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EEB4FA7253004114}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{99BE92FAA7A2AE64}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E13B0ED09E0D3492}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3DBF6E0EC7B4134E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A4A1D797DA5322DE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D3ABBF1F2EF1CDAE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D46C454E4877776D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A3662DC6BCD5981D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3A78945FA132A98D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4D72FCD7559046FD}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{35F760FD6C3FDC0B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{42FD0875989D337B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BEBD411E3ECB944A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_10.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C9B72996CA697B3A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_11.wav"
+     Index 18
+    }
+   }
+  }
+  BankLocalClass {
+   id 101380
+   name "Dirt"
+   version 7
+   tl -3040.385 1092.617
+   Volume -2
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1A63D14DE28731A7}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{837D68D4FF600037}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F477005C0BC2EF47}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F3B0FA0D6D445584}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{84BA928599E6BAF4}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1DA42B1C84018B64}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6AAE439470A36414}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3DBF6E0EC7B4134E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_01.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A4A1D797DA5322DE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_02.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D3ABBF1F2EF1CDAE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_03.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D46C454E4877776D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_04.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A3662DC6BCD5981D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_05.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3A78945FA132A98D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_06.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4D72FCD7559046FD}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_07.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{35F760FD6C3FDC0B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_08.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{42FD0875989D337B}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_09.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BEBD411E3ECB944A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_10.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C9B72996CA697B3A}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_dirt_near_11.wav"
+     Index 17
+    }
+   }
+  }
+  BankLocalClass {
+   id 103428
+   name "Metal_Wire_Add"
+   version 7
+   tl -3040.385 5241.623
+   Volume -1
+   "Volume variance" 2
+   "Pitch variance" 0.7
+   "Termination Fade Out" 100
+   Silence 70
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E9AEAE256393229E}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Foley_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{70B017BC7E74130E}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Foley_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{07BA7F348AD6FC7E}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Foley_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{007D8565EC5046BD}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Foley_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7777EDED18F2A9CD}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Foley_05.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 104452
+   name "Grass"
+   version 7
+   tl -3040.385 1454.896
+   Volume -2
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DC4CAC8A8406B2F9}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{32587D9B6D436C19}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{359F87CA0BC5D6DA}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4295EF42FF6739AA}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DB8B56DBE280083A}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AC813E531622E74A}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DC4CAC8A8406B2F9}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5F7EF9F385477D86}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_01.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C660406A98A04C16}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_02.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B6ADD2B30A8419A5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_04.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C1A7BA3BFE26F6D5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_05.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2FB36B2A17632835}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_07.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5736F7002ECCB2C3}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_08.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{203C9F88DA6E5DB3}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_09.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DC7CD6E37C38FA82}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_10.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AB76BE6B889A15F2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_11.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{326807F2957D2462}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_12.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{45626F7A61DFCB12}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_13.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{42A5952B075971D1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_foliage_14.wav"
+     Index 18
+    }
+   }
+  }
+  BankLocalClass {
+   id 107524
+   name "Asphalt"
+   version 7
+   tl -3040.385 639.767
+   Volume 1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0ED1D74F44EDCC6C}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{97CF6ED6590AFDFC}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E0C5065EADA8128C}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E702FC0FCB2EA84F}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{900894873F8C473F}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{09162D1E226B76AF}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7E1C4596D6C999DF}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0699D9BCEF660329}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_08.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 112644
+   name "Cobblestones"
+   version 7
+   tl -3040.385 820.907
+   Volume 1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{49C049B41BA1C317}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0DEF02D0646F287}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A7D498A5F2E41DF7}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A01362F49462A734}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D7190A7C60C04844}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4E07B3E57D2779D4}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{390DDB6D898596A4}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41884747B02A0C52}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{49C049B41BA1C317}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0DEF02D0646F287}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A7D498A5F2E41DF7}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A01362F49462A734}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D7190A7C60C04844}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4E07B3E57D2779D4}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{390DDB6D898596A4}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41884747B02A0C52}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3503B962A9AA9B36}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_01.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AC1D00FBB44DAAA6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_02.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DB17687340EF45D6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_03.wav"
+     Index 18
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCD092222669FF15}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_04.wav"
+     Index 19
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABDAFAAAD2CB1065}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_05.wav"
+     Index 20
+    }
+    AudioBankSampleClass Sample {
+     Filename "{32C44333CF2C21F5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_06.wav"
+     Index 21
+    }
+    AudioBankSampleClass Sample {
+     Filename "{45CE2BBB3B8ECE85}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_07.wav"
+     Index 22
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3D4BB79102215473}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_08.wav"
+     Index 23
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A41DF19F683BB03}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_09.wav"
+     Index 24
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B601967250D51C32}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_10.wav"
+     Index 25
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C10BFEFAA477F342}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_11.wav"
+     Index 26
+    }
+    AudioBankSampleClass Sample {
+     Filename "{58154763B990C2D2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_12.wav"
+     Index 27
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2F1F2FEB4D322DA2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_13.wav"
+     Index 28
+    }
+    AudioBankSampleClass Sample {
+     Filename "{28D8D5BA2BB49761}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_14.wav"
+     Index 29
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5FD2BD32DF167811}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_15.wav"
+     Index 30
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C6CC04ABC2F14981}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_16.wav"
+     Index 31
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1C66C233653A6F1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_17.wav"
+     Index 32
+    }
+   }
+  }
+  BankLocalClass {
+   id 114692
+   name "Bullet Woosh Subsonic"
+   version 7
+   tl -3040.385 -412.931
+   "Volume variance" 2
+   "Pitch variance" 4
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{38059AA400432E74}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A11B233D1DA41FE4}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D6114BB5E906F094}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D1D6B1E48F804A57}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A6DCD96C7B22A527}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3FC260F566C594B7}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SubSonic_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 117764
+   name "Sand"
+   version 7
+   tl -3040.385 1273.756
+   Volume -2
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{BA029F9CC6DDE0A4}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{53D1B4DC491E8487}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BDC565CDA05B5A67}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CACF0D4554F9B517}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B24A916F6D562FE1}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_08.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 119812
+   name "Fabric_Military_Plastic"
+   version 7
+   tl -3040.385 1002.047
+   Volume -1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5E6D841D652B69B5}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C7733D8478CC5825}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B079550C8C6EB755}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B7BEAF5DEAE80D96}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C0B4C7D51E4AE2E6}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{59AA7E4C03ADD376}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2EA016C4F70F3C06}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{56258AEECEA0A6F0}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_08.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 121860
+   name "Metal"
+   version 7
+   tl -3040.385 1899.968
+   Volume 3
+   "Pitch variance" 2
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{75985BDD9B21CC45}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EC86E24486C6FDD5}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9B8C8ACC726412A5}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9C4B709D14E2A866}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EB411815E0404716}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{725FA18CFDA77686}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0555C904090599F6}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7DD0552E30AA0300}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A7E65F7F50883A9D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3EF8E6E64D6F0B0D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{49F28E6EB9CDE47D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4E35743FDF4B5EBE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{393F1CB72BE9B1CE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A021A52E360E805E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D72BCDA6C2AC6F2E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_thin_near_07.wav"
+     Index 14
+    }
+   }
+  }
+  BankLocalClass {
+   id 123908
+   name "Wood"
+   version 7
+   tl -3040.385 1726.606
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E617729A3168AE73}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7F09CB032C8F9FE3}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0803A38BD82D7093}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0FC459DABEABCA50}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{78CE31524A092520}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E1D088CB57EE14B0}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{96DAE043A34CFBC0}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EE5F7C699AE36136}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FB5FCDFB068236F1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{624174621B650761}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{154B1CEAEFC7E811}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{128CE6BB894152D2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{65868E337DE3BDA2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FC9837AA60048C32}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8B925F2294A66342}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F317C308AD09F9B4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{841DAB8059AB16C4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{785DE2EBFFFDB1F5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_10.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F578A630B5F5E85}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_11.wav"
+     Index 18
+    }
+    AudioBankSampleClass Sample {
+     Filename "{964933FA16B86F15}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_12.wav"
+     Index 19
+    }
+   }
+  }
+  BankLocalClass {
+   id 125956
+   name "Snow"
+   version 7
+   tl -3040.385 1636.036
+   Volume -7
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{24E11AE9BE21FD3B}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BDFFA370A3C6CCAB}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CAF5CBF8576423DB}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD3231A931E29918}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA385921C5407668}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2326E0B8D8A747F8}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{542C88302C05A888}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2CA9141A15AA327E}Sounds/Weapons/_SharedData/BulletHits/samples/Snow_08.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 128004
+   name "Forest_Conifer"
+   version 7
+   tl -3040.385 2493.166
+   Volume 1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AE919CEF87ED6655}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4742B7AF082E0276}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{378F25769A0A57C5}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{40854DFE6EA8B8B5}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{568C1F48A7542597}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_05.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 129028
+   name "Glass"
+   version 7
+   tl -3040.385 2130.886
+   Volume 2
+   "Pitch variance" 1.5
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9BD53F397743794C}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{02CB86A06AA448DC}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{75C1EE289E06A7AC}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{72061479F8801D6F}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{050C7CF10C22F21F}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9C12C56811C5C38F}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EB18ADE0E5672CFF}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{939D31CADCC8B609}Sounds/Weapons/_SharedData/BulletHits/samples/Glass_08.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{87FAAAC95608FE03}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1EE413504BEFCF93}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{69EE7BD8BF4D20E3}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6E298189D9CB9A20}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1923E9012D697550}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{803D5098308E44C0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F7373810C42CABB0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8FB2A43AFD833146}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F8B8CCB20921DE36}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{04F885D9AF777907}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_glass_10.wav"
+     Index 17
+    }
+   }
+  }
+  BankLocalClass {
+   id 130052
+   name "Water_Small"
+   version 7
+   tl -3040.385 2764.875
+   Volume -2
+   Pitch 1
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{BBE10C2D70A648E0}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{22FFB5B46D417950}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{55F5DD3C99E39640}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5232276DFF652CFD}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{25384FE50BC7C38D}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 131076
+   name "Weapon"
+   version 7
+   tl -3040.385 2855.445
+   Volume 3
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{884A79E352DA99C6}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1154C07A4F3DA856}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{665EA8F2BB9F4726}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{619952A3DD19FDE7}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{16933A2B29BB1297}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8F8D83B2345C2307}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 135172
+   name "Weapon_Wood"
+   version 7
+   tl -3040.385 2946.015
+   Volume 2
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E985CA8B83FDEEB5}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{709B73129E1ADF25}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{07911B9A6AB83055}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0056E1CB0C3E8A98}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{775C8943F89C65E8}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EE4230DAE57B5478}Sounds/Weapons/_SharedData/BulletHits/samples/Weapon_Wood_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 136196
+   name "Metal_Wire"
+   version 7
+   tl -3040.385 3127.155
+   Volume -11
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{32739BC0C1C7E117}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AB6D2259DC20D087}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DC674AD128823FF7}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DBA0B0804E048536}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ACAAD808BAA66A46}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{35B46191A7415BD6}Sounds/Weapons/_SharedData/BulletHits/samples/Metal_Wire_Base_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 137220
+   name "Transient_Hard"
+   version 7
+   tl -3040.385 271.592
+   Volume -6
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{08A16DD71B52EC20}Sounds/Weapons/_SharedData/BulletHits/samples/Transient_Hit_Hard_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{91BFD44E06B5DDB0}Sounds/Weapons/_SharedData/BulletHits/samples/Transient_Hit_Hard_02.wav"
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 138244
+   name "Transient_Hard_Short"
+   version 7
+   tl -3040.385 377.891
+   Volume -11
+   Pitch 1
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{F67B21CB969423A0}Sounds/Weapons/_SharedData/BulletHits/samples/Transient_Hit_Hard_Short_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6F6598528B731230}Sounds/Weapons/_SharedData/BulletHits/samples/Transient_Hit_Hard_Short_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{186FF0DA7FD1FD40}Sounds/Weapons/_SharedData/BulletHits/samples/Transient_Hit_Hard_Short_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 139268
+   name "Concrete_Debris"
+   version 7
+   tl -3040.385 3602.008
+   Pitch 3
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0865245831A53E99}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{917B9DC12C420F09}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E671F549D8E0E079}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E1B60F18BE665ABA}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{96BC67904AC4B5CA}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0FA2DE095723845A}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{78A8B681A3816B2A}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{002D2AAB9A2EF1DC}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{772742236E8C1EAC}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_09.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8B670B48C8DAB99D}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_10.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FC6D63C03C7856ED}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_11.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6573DA59219F677D}Sounds/Weapons/_SharedData/BulletHits/samples/Concrete_debris_12.wav"
+     Index 11
+    }
+   }
+  }
+  BankLocalClass {
+   id 140292
+   name "Asphalt_Debris"
+   version 7
+   tl -3040.385 3495.2
+   Volume -3
+   Pitch 3
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Silence 200
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{F6F41B2C98C07D11}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FEBC15DF334BB254}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_08.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6FEAA2B585274C81}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_02.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{18E0CA3D7185A3F1}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_03.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1F27306C17031932}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_04.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{863989F50AE428A2}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_07.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F133E17DFE46C7D2}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_06.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{682D58E4E3A1F642}Sounds/Weapons/_SharedData/BulletHits/samples/Asphalt_debris_05.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 141316
+   name "Cobblestones_Debris"
+   version 7
+   tl -3040.385 3711.316
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Silence 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CD10C22DC17BC88C}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{540E7BB4DC9CF91C}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2304133C283E166C}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{24C3E96D4EB8ACAF}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{53C981E5BA1A43DF}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CAD7387CA7FD724F}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BDDD50F4535F9D3F}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C558CCDE6AF007C9}Sounds/Weapons/_SharedData/BulletHits/samples/Coblestones_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 143364
+   name "Fabric_Military_Plastic_Debris"
+   version 7
+   tl -3040.385 3820.623
+   Volume -6
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{68ADA88D72037404}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F1B311146FE44594}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{86B9799C9B46AAE4}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{817E83CDFDC01027}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F674EB450962FF57}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6F6A52DC1485CEC7}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{18603A54E02721B7}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{60E5A67ED988BB41}Sounds/Weapons/_SharedData/BulletHits/samples/Fabric_Military_Plastic_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 144388
+   name "Dirt_Debris"
+   version 7
+   tl -3040.385 3929.931
+   Volume -2
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{215E9E7AC22214EE}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B84027E3DFC5257E}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CF4A4F6B2B67CA0E}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C88DB53A4DE170CD}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BF87DDB2B9439FBD}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2699642BA4A4AE2D}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{51930CA35006415D}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2916908969A9DBAB}Sounds/Weapons/_SharedData/BulletHits/samples/Dirt_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 145412
+   name "Forest_Conifer_Debris"
+   version 7
+   tl -3040.385 4039.239
+   Volume -1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{8AA4F988C06CD510}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{13BA4011DD8BE480}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{64B0289929290BF0}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6377D2C84FAFB133}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{147DBA40BB0D5E43}Sounds/Weapons/_SharedData/BulletHits/samples/Forest_Conifer_debris_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 146436
+   name "Grass_Debris"
+   version 7
+   tl -3040.385 4148.546
+   Volume -12
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9CEC938D35921435}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{72F8429CDCD7CAD5}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_03.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{753FB8CDBA517016}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_04.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0235D0454EF39F66}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_05.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9B2B69DC5314AEF6}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_06.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EC210154A7B64186}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_07.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 147460
+   name "Gravel_Debris"
+   version 7
+   tl -3040.385 4257.854
+   Volume -3
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{2CB601C8CAAA3A50}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B5A8B851D74D0BC0}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C2A2D0D923EFE4B0}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C5652A8845695E73}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B26F4200B1CBB103}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2B71FB99AC2C8093}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5C7B9311588E6FE3}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{24FE0F3B6121F515}Sounds/Weapons/_SharedData/BulletHits/samples/Gravel_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 148484
+   name "Leaves_Dry_Debris"
+   version 7
+   tl -3040.385 4476.468
+   Volume -5
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7118207442847490}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E80699ED5F634500}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9F0CF165ABC1AA70}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{98CB0B34CD4710B3}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EFC163BC39E5FFC3}Sounds/Weapons/_SharedData/BulletHits/samples/Leaves_Dry_debris_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 149508
+   name "Sand_Debris"
+   version 7
+   tl -3040.385 4585.776
+   Volume -6
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{F10BFE3419B77B22}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{681547AD04504AB2}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1F1F2F25F0F2A5C2}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{18D8D57496741F01}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6FD2BDFC62D6F071}Sounds/Weapons/_SharedData/BulletHits/samples/Sand_debris_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 150532
+   name "Soil_Debris"
+   version 7
+   tl -3040.385 4696.512
+   Volume -5
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{588E23E55B33A2F8}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C1909A7C46D49368}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B69AF2F4B2767C18}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B15D08A5D4F0C6DB}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C657602D205229AB}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5F49D9B43DB5183B}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2843B13CC917F74B}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{50C62D16F0B86DBD}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 151556
+   name "Stone_Debris"
+   version 7
+   tl -3040.385 4804.392
+   Volume -1
+   Pitch 2
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 350
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CB4DF12964775336}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{525348B0799062A6}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{255920388D328DD6}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{229EDA69EBB43715}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5594B2E11F16D865}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CC8A0B7802F1E9F5}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB8063F0F6530685}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C305FFDACFFC9C73}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B40F97523B5E7303}Sounds/Weapons/_SharedData/BulletHits/samples/Stone_debris_09.wav"
+     Index 8
+    }
+   }
+  }
+  BankLocalClass {
+   id 152580
+   name "Wood_Debris"
+   version 7
+   tl -3040.385 4913.7
+   Volume 6
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AFE918862F490FEE}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{36F7A11F32AE3E7E}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41FDC997C60CD10E}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{463A33C6A08A6BCD}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{31305B4E542884BD}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A82EE2D749CFB52D}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DF248A5FBD6D5A5D}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A7A1167584C2C0AB}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 153604
+   name "Water_Debris"
+   version 7
+   tl -3040.385 5023.006
+   Volume -1
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A61B91A3A73EC560}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3F05283ABAD9F4F0}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{480F40B24E7B1B80}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4FC8BAE328FDA143}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{38C2D26BDC5F4E33}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_debris_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 156676
+   name "Ricochets SuperSonic"
+   version 7
+   tl -3040.385 66.154
+   Volume 16
+   "Pitch variance" 4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{461E7B17E06EF422}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DF00C28EFD89C5B2}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A80AAA06092B2AC2}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AFCD50576FAD9001}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D8C738DF9B0F7F71}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41D9814686E84EE1}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{36D3E9CE724AA191}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4E5675E44BE53B67}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{395C1D6CBF47D417}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_09.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C51C540719117326}Sounds/Weapons/_SharedData/BulletHits/samples/Ricochet_High_10.wav"
+     Index 9
+    }
+   }
+  }
+  BankLocalClass {
+   id 161796
+   name " Flesh_Low_End"
+   version 7
+   tl -3040.385 -930.427
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -6
+   Pitch 1
+   "Pitch variance" 2
+   Offset 23
+   "Fade in time" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DB5234CBF848C415}Sounds/Weapons/_SharedData/BulletHits/samples/Flesh_Low_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3546E5DA110D1AF5}Sounds/Weapons/_SharedData/BulletHits/samples/Flesh_Low_03.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5347629238F9B6D4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_01.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CA59DB0B251E8744}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_02.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BD53B383D1BC6834}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_03.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA9449D2B73AD2F7}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_04.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD9E215A43983D87}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_05.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{548098C35E7F0C17}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_06.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{238AF04BAADDE367}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_07.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5B0F6C6193727991}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_08.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2C0504E967D096E1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_09.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0454D82C18631D0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_10.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A74F250A3524DEA0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_11.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3E519C9328C3EF30}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_12.wav"
+     Index 13
+    }
+   }
+  }
+  BankLocalClass {
+   id 187396
+   name "Bullet Woosh Supersonic"
+   version 7
+   tl -3040.385 -336
+   ins {
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 100365
+       port 17
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   Volume 1
+   "Volume variance" 3
+   "Pitch variance" 2
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AD166E13AACF41A7}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3408D78AB7287037}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4302BF02438A9F47}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{44C54553250C2584}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{33CF2DDBD1AECAF4}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AAD19442CC49FB64}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHits_PreWoosh_SuperSonic_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 191492
+   name "Brick"
+   version 7
+   tl -3040.385 3036.585
+   Volume -1
+   Pitch -1.75
+   "Pitch variance" 4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D95A1F0A48D1CEBB}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4044A6935536FF2B}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{374ECE1BA194105B}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3089344AC712AA98}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A9978DD3DAF59B08}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_07.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{47835CC233B045E8}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_05.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DE9DE55B2E577478}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_06.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3503B962A9AA9B36}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_01.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AC1D00FBB44DAAA6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_02.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DB17687340EF45D6}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_03.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCD092222669FF15}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_04.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABDAFAAAD2CB1065}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_05.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{32C44333CF2C21F5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_06.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{45CE2BBB3B8ECE85}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_07.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3D4BB79102215473}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_08.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A41DF19F683BB03}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_09.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B601967250D51C32}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_10.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C10BFEFAA477F342}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_11.wav"
+     Index 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{58154763B990C2D2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_12.wav"
+     Index 18
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2F1F2FEB4D322DA2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_13.wav"
+     Index 19
+    }
+    AudioBankSampleClass Sample {
+     Filename "{28D8D5BA2BB49761}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_14.wav"
+     Index 20
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5FD2BD32DF167811}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_15.wav"
+     Index 21
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C6CC04ABC2F14981}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_16.wav"
+     Index 22
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1C66C233653A6F1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_masonry_17.wav"
+     Index 23
+    }
+   }
+  }
+  BankLocalClass {
+   id 192516
+   name "Brick_Debris"
+   version 7
+   tl -3040.385 5354.237
+   "Pitch variance" 3
+   Silence 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{EBC7F7ED67851026}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_Debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{72D94E747A6221B6}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_Debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{05D326FC8EC0CEC6}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_Debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0214DCADE8467405}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_Debris_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 197636
+   name "Grass_Hard"
+   version 7
+   tl -3040.385 1545.466
+   Volume -8
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Silence 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E063DA45A59AEE2A}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{797D63DCB87DDFBA}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0E770B544CDF30CA}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{09B0F1052A598A09}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7EBA998DDEFB6579}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E7A42014C31C54E9}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_Hard_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 199684
+   name "Grass_Debris_Tall"
+   version 7
+   tl -3040.385 4367.162
+   Volume -10
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CD65C3E723AD5891}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{547B7A7E3E4A6901}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{237112F6CAE88671}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{24B6E8A7AC6E3CB2}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{53BC802F58CCD3C2}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CAA239B6452BE252}Sounds/Weapons/_SharedData/BulletHits/samples/Grass_debris_tall_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 200708
+   name "Wood_logs"
+   version 7
+   tl -3040.385 1817.176
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{33765567AF7616AD}Sounds/Weapons/_SharedData/BulletHits/samples/wood_log_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AA68ECFEB291273D}Sounds/Weapons/_SharedData/BulletHits/samples/wood_log_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DD6284764633C84D}Sounds/Weapons/_SharedData/BulletHits/samples/wood_log_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DAA57E2720B5728E}Sounds/Weapons/_SharedData/BulletHits/samples/wood_log_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ADAF16AFD4179DFE}Sounds/Weapons/_SharedData/BulletHits/samples/wood_log_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FB5FCDFB068236F1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_01.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{624174621B650761}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_02.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{154B1CEAEFC7E811}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_03.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{128CE6BB894152D2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_04.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{65868E337DE3BDA2}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_05.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FC9837AA60048C32}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_06.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8B925F2294A66342}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_07.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F317C308AD09F9B4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_08.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{841DAB8059AB16C4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_09.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{785DE2EBFFFDB1F5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_10.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F578A630B5F5E85}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_11.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{964933FA16B86F15}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_wood_near_12.wav"
+     Index 16
+    }
+   }
+  }
+  BankLocalClass {
+   id 201732
+   name "Tiles"
+   version 7
+   tl -3040.385 2583.735
+   Volume -1
+   Pitch 2
+   "Pitch variance" 4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D95A1F0A48D1CEBB}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4044A6935536FF2B}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{374ECE1BA194105B}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3089344AC712AA98}Sounds/Weapons/_SharedData/BulletHits/samples/Brick_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B76FC11379BDF680}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_01.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2E71788A645AC710}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_02.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{597B100290F82860}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_03.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5EBCEA53F67E92A3}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_04.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{29B682DB02DC7DD3}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_05.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B0A83B421F3B4C43}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_06.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C7A253CAEB99A333}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_07.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BF27CFE0D23639C5}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_ceramic_near_08.wav"
+     Index 11
+    }
+   }
+  }
+  BankLocalClass {
+   id 203780
+   name "Asphalt_Dust"
+   version 7
+   tl -3040.385 3383.393
+   Volume -13
+   Pitch 8.33
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{553360B39AE6E891}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CC2DD92A8701D901}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB27B1A273A33671}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BCE04BF315258CB2}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CBEA237BE18763C2}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{52F49AE2FC605252}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{25FEF26A08C2BD22}Sounds/Weapons/_SharedData/BulletHits/samples/Impact_Dust_Layer_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 205828
+   name "Dust_Layert"
+   version 7
+   tl -3040.385 3274.085
+   Volume -7
+   Pitch 5
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{588E23E55B33A2F8}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C1909A7C46D49368}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B69AF2F4B2767C18}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B15D08A5D4F0C6DB}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C657602D205229AB}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5F49D9B43DB5183B}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2843B13CC917F74B}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{50C62D16F0B86DBD}Sounds/Weapons/_SharedData/BulletHits/samples/Soil_debris_08.wav"
+     Index 7
+    }
+   }
+  }
+  BankLocalClass {
+   id 209924
+   name "Water_Drops"
+   version 7
+   tl -3040.385 5132.314
+   Volume -8
+   Pitch 3
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Selection FirstRandomAndSequence
+   Silence 250
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A0338DEF75CA9D2F}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_drops_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{392D3476682DACBF}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_drops_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4E275CFE9C8F43CF}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_drops_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{49E0A6AFFA09F90C}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_drops_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3EEACE270EAB167C}Sounds/Weapons/_SharedData/BulletHits/samples/Water_small_drops_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 220164
+   name "OtherCharLocalFlesh"
+   version 7
+   tl -3037.29 6603.143
+   Volume 9
+   "Pitch variance" 1.974
+   Silence 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{667FF1018FF2A2CB}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FF6148989215935B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{886B201066B77C2B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8FACDA410031C6E8}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 225284
+   name "Titanium High"
+   version 7
+   tl -3040.385 5498.811
+   Volume 12
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7F79B47E92BA3DAE}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_01_High.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3F89955B24A6BFE9}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_02_High.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C189D51ED1F4D3A5}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_03_High.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BE69D710489FBB67}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_04_High.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 227332
+   name "SSh68 High"
+   version 7
+   tl -3040.385 5572.806
+   Volume 12
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{4AE3D45D88483737}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_01_High.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0A13F5783E54B570}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_02_High.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F413B53DCB06D93C}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_03_High.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8BF3B733526DB1FE}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_04_High.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 228356
+   name "SSh68 Low"
+   version 7
+   tl -3040.385 -747.129
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume 16.2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7D44D2563D84F5D2}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_01_Low.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{735A961E0073FA08}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_02_Low.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{76AF55D9EB2100BE}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_03_Low.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6F661E8E7B9DE5BC}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Helmet_SSh68_04_Low.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 229380
+   name "Titanium Low"
+   version 7
+   tl -3040.385 -832.731
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume 9
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{53E386AEF9FED78B}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_01_Low.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5DFDC2E6C409D851}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_02_Low.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{580801212F5B22E7}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_03_Low.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41C14A76BFE7C7E5}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Body_Titanium_Plate_04_Low.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 230404
+   name "Flesh"
+   version 7
+   tl -3040.385 2403.111
+   Volume 9
+   "Pitch variance" 1.974
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{667FF1018FF2A2CB}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FF6148989215935B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{886B201066B77C2B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8FACDA410031C6E8}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5347629238F9B6D4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_01.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CA59DB0B251E8744}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_02.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BD53B383D1BC6834}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_03.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA9449D2B73AD2F7}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_04.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD9E215A43983D87}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_05.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{548098C35E7F0C17}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_06.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{238AF04BAADDE367}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_07.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5B0F6C6193727991}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_08.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2C0504E967D096E1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_09.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0454D82C18631D0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_10.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A74F250A3524DEA0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_11.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3E519C9328C3EF30}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_12.wav"
+     Index 15
+    }
+   }
+  }
+  BankLocalClass {
+   id 239620
+   name "Aramid Hi"
+   version 7
+   tl -3040.385 5651.667
+   Volume 12
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DE6F911411B095E1}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4771288D0C57A471}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{307B4005F8F54B01}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{37BCBA549E73F1C2}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 240644
+   name " Flesh_Low_End"
+   version 7
+   tl -3040.385 -586.527
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 109581
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -6
+   Pitch 4.3
+   "Pitch variance" 2
+   "Fade in time" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DB5234CBF848C415}Sounds/Weapons/_SharedData/BulletHits/samples/Flesh_Low_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3546E5DA110D1AF5}Sounds/Weapons/_SharedData/BulletHits/samples/Flesh_Low_03.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5347629238F9B6D4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_01.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CA59DB0B251E8744}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_02.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BD53B383D1BC6834}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_03.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA9449D2B73AD2F7}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_04.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD9E215A43983D87}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_05.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{548098C35E7F0C17}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_06.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{238AF04BAADDE367}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_07.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5B0F6C6193727991}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_08.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2C0504E967D096E1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_09.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0454D82C18631D0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_10.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A74F250A3524DEA0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_11.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3E519C9328C3EF30}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_12.wav"
+     Index 13
+    }
+   }
+  }
+  BankLocalClass {
+   id 241668
+   name "Aramid Hi"
+   version 7
+   tl -3037.29 6683.143
+   Volume 13.342
+   "Pitch variance" 1
+   Silence 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DE6F911411B095E1}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4771288D0C57A471}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{307B4005F8F54B01}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{37BCBA549E73F1C2}Sounds/Weapons/_SharedData/BulletHits/samples/BallisticProtection/Weapons_BulletHit_Aramid_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 259076
+   name "InCabin APC Default"
+   version 7
+   tl -3040.385 -2348.308
+   Volume 5
+   "Volume variance" 2
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{228702DCDF2C8C72}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB99BB45C2CBBDE2}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CC93D3CD36695292}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CB54299C50EFE851}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BC5E4114A44D0721}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2540F88DB9AA36B1}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{524A90054D08D9C1}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 274436
+   name "Car"
+   version 7
+   tl -3040.385 -1431.667
+   Volume 9
+   "Volume variance" 2
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{EDE12732BD5505D5}Sounds/Weapons/_SharedData/BulletHits/samples/Car_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{74FF9EABA0B23445}Sounds/Weapons/_SharedData/BulletHits/samples/Car_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{03F5F6235410DB35}Sounds/Weapons/_SharedData/BulletHits/samples/Car_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{04320C72329661F6}Sounds/Weapons/_SharedData/BulletHits/samples/Car_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{733864FAC6348E86}Sounds/Weapons/_SharedData/BulletHits/samples/Car_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EA26DD63DBD3BF16}Sounds/Weapons/_SharedData/BulletHits/samples/Car_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9D2CB5EB2F715066}Sounds/Weapons/_SharedData/BulletHits/samples/Car_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E5A929C116DECA90}Sounds/Weapons/_SharedData/BulletHits/samples/Car_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{98A1844BEE74DE7D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{01BF3DD2F393EFED}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{76B5555A0731009D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7172AF0B61B7BA5E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0678C7839515552E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9F667E1A88F264BE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E86C16927C508BCE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{90E98AB845FF1138}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E7E3E230B15DFE48}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1BA3AB5B170B5979}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_10.wav"
+     Index 17
+    }
+   }
+  }
+  BankLocalClass {
+   id 275460
+   name "Metal_Armor"
+   version 7
+   tl -3040.385 1970.909
+   Volume 8
+   "Pitch variance" 0.75
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D2DDDEF87F562314}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4BC3676162B11284}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3CC90FE99613FDF4}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3B0EF5B8F0954737}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4C049D300437A847}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D51A24A919D099D7}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A2104C21ED7276A7}Sounds/Weapons/_SharedData/BulletHits/samples/Armor_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 282628
+   name "InCabin WentThrough Default"
+   version 7
+   tl -3040.385 -2048.588
+   Volume -19
+   "Volume variance" 3
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CA88DC921D0A92EF}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5396650B00EDA37F}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{249C0D83F44F4C0F}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{235BF7D292C9F6CC}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{54519F5A666B19BC}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD4F26C37B8C282C}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA454E4B8F2EC75C}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 285700
+   name "InCabin WentThrough APC"
+   version 7
+   tl -3040.385 -2117.813
+   Volume 3
+   "Volume variance" 1
+   Pitch 1
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{97B88917515AAB16}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughRip_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0EA6308E4CBD9A86}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughRip_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{79AC5806B81F75F6}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughRip_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 293892
+   name "InCabin APC Reverb Default "
+   version 7
+   tl -3040.385 -2447.639
+   Volume -3
+   "Volume variance" 2
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0A5EB3C3DC160CCB}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{93400A5AC1F13D5B}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E44A62D23553D22B}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E38D988353D568E8}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9487F00BA7778798}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0D994992BA90B608}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7A93211A4E325978}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_Reverb_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 297988
+   name "InCabin WentThrough APC AddLayer"
+   version 7
+   tl -3040.385 -2178
+   Volume 3
+   "Volume variance" 1
+   Pitch 1
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{C541AEF731F2A351}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5C5F176E2C1592C1}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2B557FE6D8B77DB1}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2C9285B7BE31C772}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5B98ED3F4A932802}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C28654A657741992}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughAdd_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 301060
+   name "InCabin WentThroughBounce APC"
+   version 7
+   tl -3040.385 -2536.714
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 302093
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   Volume -7
+   "Volume variance" 5
+   Pitch 1.5
+   "Pitch variance" 1.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{B6B3CC480E18A84B}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2FAD75D113FF99DB}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{58A71D59E75D76AB}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5F60E70881DBCC68}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{286A8F8075792318}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1743619689E1288}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C67E5E919C3CFDF8}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BEFBC2BBA593670E}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C9F1AA335131887E}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_09.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{35B1E358F7672F4F}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/APC/Weapons_BulletHits_InCabin_APC_Default_WentThroughBounce_10.wav"
+     Index 9
+    }
+   }
+  }
+  BankLocalClass {
+   id 309252
+   name "Car WentThrough"
+   version 7
+   tl -3040.385 -1353.333
+   Volume 9
+   "Volume variance" 2
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{09617220CCD31C41}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{907FCBB9D1342DD1}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E775A3312596C2A1}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E0B2596043107862}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{97B831E8B7B29712}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0EA68871AA55A682}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{79ACE0F95EF749F2}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{01297CD36758D304}Sounds/Weapons/_SharedData/BulletHits/samples/Car_WentThrough_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{98A1844BEE74DE7D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_01.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{01BF3DD2F393EFED}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_02.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{76B5555A0731009D}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_03.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7172AF0B61B7BA5E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_04.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0678C7839515552E}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_05.wav"
+     Index 12
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9F667E1A88F264BE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_06.wav"
+     Index 13
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E86C16927C508BCE}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_07.wav"
+     Index 14
+    }
+    AudioBankSampleClass Sample {
+     Filename "{90E98AB845FF1138}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_08.wav"
+     Index 15
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E7E3E230B15DFE48}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_09.wav"
+     Index 16
+    }
+    AudioBankSampleClass Sample {
+     Filename "{1BA3AB5B170B5979}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_metal_auto_10.wav"
+     Index 17
+    }
+   }
+  }
+  BankLocalClass {
+   id 311300
+   name "InCabin WentThrough Default"
+   version 7
+   tl -3040.385 -1287.5
+   Volume -19
+   "Volume variance" 3
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CA88DC921D0A92EF}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5396650B00EDA37F}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{249C0D83F44F4C0F}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{235BF7D292C9F6CC}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{54519F5A666B19BC}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CD4F26C37B8C282C}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BA454E4B8F2EC75C}Sounds/Weapons/_SharedData/BulletHits/samples/InCabinHits/Weapons_BulletHits_InCabin_Default_WentThrough_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 312324
+   name "SL_Weapon"
+   version 7
+   tl -3040 5760
+   "Volume variance" 1
+   Pitch 18
+   "Pitch variance" 1
+   Resampler FIR_4
+   Offset 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{68C8E1EAD06B956C}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F1D65873CD8CA4FC}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{86DC30FB392E4B8C}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{811BCAAA5FA8F14F}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F611A222AB0A1E3F}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6F0F1BBBB6ED2FAF}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{18057333424FC0DF}Sounds/Weapons/_SharedData/Drop/Samples/WeaponLayers/Weapons_Drops_WeaponLayer_Rifle_WoodMetal_07.wav"
+     Index 6
+    }
+   }
+  }
+  BankLocalClass {
+   id 313348
+   name "SL_Metal Hi"
+   version 7
+   tl -3040 5888
+   Volume 6.5
+   Pitch 24
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{95579A54EBFD9735}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0C4923CDF61AA6A5}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7B434B4502B849D5}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7C84B114643EF316}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 314372
+   name "SL_Plastic"
+   version 7
+   tl -3040 5824
+   Volume -1
+   "Volume variance" 1
+   Pitch 12
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E3990A0B3845A493}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7A87B39225A29503}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0D8DDB1AD1007A73}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0A4A214BB786C0B0}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 315396
+   name "SL_Plastic"
+   version 7
+   tl -3040 5984
+   Volume -1
+   "Volume variance" 1
+   Pitch 12
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E3990A0B3845A493}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7A87B39225A29503}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0D8DDB1AD1007A73}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0A4A214BB786C0B0}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Plastic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 316420
+   name "SL_Metal Hi"
+   version 7
+   tl -3040 6192
+   Volume 6.5
+   Pitch 20
+   Resampler FIR_4
+   Offset 30
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{95579A54EBFD9735}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0C4923CDF61AA6A5}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7B434B4502B849D5}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7C84B114643EF316}Sounds/Weapons/_SharedData/Melee/Samples/SurfaceLayers/Melee_SurfaceLayer_Metal_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 317444
+   name "Wood"
+   version 7
+   tl -3040 6112
+   "Pitch variance" 3
+   "Termination Fade Out" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E617729A3168AE73}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7F09CB032C8F9FE3}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_02.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0803A38BD82D7093}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0FC459DABEABCA50}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_04.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{78CE31524A092520}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E1D088CB57EE14B0}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_06.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{96DAE043A34CFBC0}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_07.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{EE5F7C699AE36136}Sounds/Weapons/_SharedData/BulletHits/samples/Wood_08.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 118812
+   name "Spatiality"
+   version 5
+   tl -1187 -514.728
+   SpatialFactorSource Curve
+   SFCurve {
+    CurvePoint "1" {
+     X 1
+    }
+    CurvePoint "2" {
+     X 1.31098
+     Y 1
+    }
+   }
+  }
+  SpatialityClass {
+   id 218140
+   name "Spatiality 231"
+   version 5
+   tl -1183.905 6354.114
+   spatialFactor 0.494
+  }
+ }
+ groups {
+  GroupClass {
+   id 211971
+   name "Debris"
+   children {
+    140292 205828 149508 143364 190468 152580 192516 153604 139268 148484 209924 151556 199684 141316 146436 203780 145412 150532 103428 147460 144388 225284 227332 232452 233476 234500 239620 235524 236548 237572 194572 193548 204812 210956 171020 315396 317444 313348 316420 312324 314372
+   }
+   parent -1
+   Color 0.366 0.211 0.002 0.251
+  }
+  GroupClass {
+   id 212995
+   name "Transient"
+   children {
+    200708 101380 129028 90116 98308 88068 230404 96260 93188 87044 92164 125956 104452 121860 201732 117764 107524 135172 128004 131076 197636 112644 91140 80900 130052 123908 136196 191492 119812 275460
+   }
+   parent -1
+   Color 0.083 0.289 0.6 0.251
+  }
+  GroupClass {
+   id 214019
+   name "Generic Transient"
+   children {
+    137220 138244
+   }
+   parent -1
+   Color 0.103 0.506 0.885 0.251
+  }
+  GroupClass {
+   id 289795
+   name "Basic Hits Routing"
+   children {
+    247813 100365 154645 162834 115736 168966 253958 79885 252934 118812 226310 83987 163859 89106 97289 110598 304152 306198 308230 307224
+   }
+   parent -1
+   Color 0.023 0.052 0.95 0.251
+  }
+  GroupClass {
+   id 245763
+   name "Player hits"
+   children {
+    240644 161796 231436 228356 229380 248837
+   }
+   parent -1
+   Color 1 0.001 0.001 0.251
+  }
+  GroupClass {
+   id 249859
+   name "Ricochets"
+   children {
+    84996 156676
+   }
+   parent -1
+   Color 0.556 0.306 0.073 0.251
+  }
+  GroupClass {
+   id 250883
+   name "Pre-\"Whooshes\""
+   children {
+    114692 187396
+   }
+   parent -1
+   Color 0.125 0 0.22 0.251
+  }
+  GroupClass {
+   id 272387
+   name "InCabin"
+   children {
+    262151 281605 269334 257052 259076 254982 263186 261142 256006 268311 265238 266253 258070 260103 264196 280583 279559 277522 286726 267282 282628 283654 284677 285700 288787 287763 271369 293892 295942 294930 296988 297988 299014 300037 301060 304135 305159 306183
+   }
+   parent -1
+   Color 1 0 0 0.251
+  }
+  GroupClass {
+   id 278531
+   name "Dedicated vehicle hit sounds"
+   children {
+    276498 274436 273414 270345 291864 292870 310278 309252 311300
+   }
+   parent -1
+   Color 0.686 0.58 0.259 0.251
+  }
+  GroupClass {
+   id 290819
+   name "Close hits on other characters"
+   children {
+    242694 241668 216082 221205 222227 218140 220164 217097
+   }
+   parent -1
+   Color 0.953 0 1 0.251
+  }
+ }
+ version 1
+ sourcesLimit 2
+}
