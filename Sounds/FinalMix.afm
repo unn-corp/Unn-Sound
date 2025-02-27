@@ -1189,8 +1189,8 @@ AudioOutputStateResClass {
    pi {
     2 0
    }
-   volume 2.818
-   volume_dB 9
+   volume 2.239
+   volume_dB 7
    type In
    color 0.937 0.82 0.91 1
   }

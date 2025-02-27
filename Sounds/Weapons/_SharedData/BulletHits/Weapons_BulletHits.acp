@@ -154,7 +154,6 @@ AudioClass {
    pi {
     50 0
    }
-   volume_dB 3
    priority 60
    outState 224267
    outStatePort 9223
@@ -5310,51 +5309,51 @@ AudioClass {
      Index 3
     }
     AudioBankSampleClass Sample {
-     Filename "{5347629238F9B6D4}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_01.wav"
+     Filename "{1DEF76B49F736B23}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi.wav"
      Index 4
     }
     AudioBankSampleClass Sample {
-     Filename "{CA59DB0B251E8744}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_02.wav"
+     Filename "{FCC0E242F733F760}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_10.wav"
      Index 5
     }
     AudioBankSampleClass Sample {
-     Filename "{BD53B383D1BC6834}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_03.wav"
+     Filename "{8BCA8ACA03911810}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_11.wav"
      Index 6
     }
     AudioBankSampleClass Sample {
-     Filename "{BA9449D2B73AD2F7}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_04.wav"
+     Filename "{12D433531E762980}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_12.wav"
      Index 7
     }
     AudioBankSampleClass Sample {
-     Filename "{CD9E215A43983D87}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_05.wav"
+     Filename "{0AE30A0C07F9108A}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_2.wav"
      Index 8
     }
     AudioBankSampleClass Sample {
-     Filename "{548098C35E7F0C17}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_06.wav"
+     Filename "{7DE96284F35BFFFA}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_3.wav"
      Index 9
     }
     AudioBankSampleClass Sample {
-     Filename "{238AF04BAADDE367}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_07.wav"
+     Filename "{7A2E98D595DD4539}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_4.wav"
      Index 10
     }
     AudioBankSampleClass Sample {
-     Filename "{5B0F6C6193727991}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_08.wav"
+     Filename "{0D24F05D617FAA49}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_5.wav"
      Index 11
     }
     AudioBankSampleClass Sample {
-     Filename "{2C0504E967D096E1}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_09.wav"
+     Filename "{943A49C47C989BD9}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_6.wav"
      Index 12
     }
     AudioBankSampleClass Sample {
-     Filename "{D0454D82C18631D0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_10.wav"
+     Filename "{E330214C883A74A9}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_7.wav"
      Index 13
     }
     AudioBankSampleClass Sample {
-     Filename "{A74F250A3524DEA0}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_11.wav"
+     Filename "{9BB5BD66B195EE5F}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_8.wav"
      Index 14
     }
     AudioBankSampleClass Sample {
-     Filename "{3E519C9328C3EF30}Sounds/Weapons/_SharedData/BulletHits/samples/blt_imp_flesh_npc_head_12.wav"
+     Filename "{ECBFD5EE4537012F}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi_9.wav"
      Index 15
     }
    }
