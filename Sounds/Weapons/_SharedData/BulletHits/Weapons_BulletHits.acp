@@ -154,6 +154,7 @@ AudioClass {
    pi {
     50 0
    }
+   volume_dB 3
    priority 60
    outState 224267
    outStatePort 9223
