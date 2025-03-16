@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{197B780224F9CD10}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-10LUFS_to_-8LUFS.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{42A7686E0F478607}Sounds/_SharedData/Signals/Weapons/AddLayerManagers/Explosions_ALM_Default.sig"
+ Configurations {
+  AudioSignalResourceClass PC {
+  }
+  AudioSignalResourceClass XBOX_ONE : PC {
+  }
+  AudioSignalResourceClass XBOX_SERIES : PC {
+  }
+  AudioSignalResourceClass PS4 : PC {
+  }
+  AudioSignalResourceClass PS5 : PC {
+  }
+  AudioSignalResourceClass HEADLESS : PC {
+  }
+ }
+}
