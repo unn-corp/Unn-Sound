@@ -359,11 +359,20 @@ AudioSignalResClass {
   IOPInputValueClass {
    id 231
    name "Send It"
-   tl 27.521 -60.991
+   tl 38.632 142.342
    children {
     150 154 156 157 158 159 164 165 166 167 170 172 174 175 178 180 219
    }
    value 2
+  }
+  IOPInputValueClass {
+   id 232
+   name "Close EnvLayer Modifier"
+   tl 40.028 28.361
+   children {
+    150 158 166 174
+   }
+   value 0.75
   }
  }
  Ops {
@@ -986,10 +995,6 @@ AudioSignalResClass {
    }
    inputs {
     ConnectionClass connection {
-     id 138
-     port 0
-    }
-    ConnectionClass connection {
      id 6
      port 0
     }
@@ -999,6 +1004,14 @@ AudioSignalResClass {
     }
     ConnectionClass connection {
      id 20
+     port 0
+    }
+    ConnectionClass connection {
+     id 232
+     port 0
+    }
+    ConnectionClass connection {
+     id 138
      port 0
     }
    }
@@ -1078,10 +1091,6 @@ AudioSignalResClass {
    }
    inputs {
     ConnectionClass connection {
-     id 155
-     port 0
-    }
-    ConnectionClass connection {
      id 6
      port 0
     }
@@ -1091,6 +1100,10 @@ AudioSignalResClass {
     }
     ConnectionClass connection {
      id 20
+     port 0
+    }
+    ConnectionClass connection {
+     id 155
      port 0
     }
    }
@@ -1104,10 +1117,6 @@ AudioSignalResClass {
    }
    inputs {
     ConnectionClass connection {
-     id 161
-     port 0
-    }
-    ConnectionClass connection {
      id 20
      port 0
     }
@@ -1117,6 +1126,14 @@ AudioSignalResClass {
     }
     ConnectionClass connection {
      id 7
+     port 0
+    }
+    ConnectionClass connection {
+     id 232
+     port 0
+    }
+    ConnectionClass connection {
+     id 161
      port 0
     }
    }
@@ -1236,10 +1253,6 @@ AudioSignalResClass {
    }
    inputs {
     ConnectionClass connection {
-     id 22
-     port 0
-    }
-    ConnectionClass connection {
      id 20
      port 0
     }
@@ -1249,6 +1262,14 @@ AudioSignalResClass {
     }
     ConnectionClass connection {
      id 169
+     port 0
+    }
+    ConnectionClass connection {
+     id 232
+     port 0
+    }
+    ConnectionClass connection {
+     id 22
      port 0
     }
    }
@@ -1368,10 +1389,6 @@ AudioSignalResClass {
    }
    inputs {
     ConnectionClass connection {
-     id 177
-     port 0
-    }
-    ConnectionClass connection {
      id 27
      port 0
     }
@@ -1381,6 +1398,14 @@ AudioSignalResClass {
     }
     ConnectionClass connection {
      id 20
+     port 0
+    }
+    ConnectionClass connection {
+     id 232
+     port 0
+    }
+    ConnectionClass connection {
+     id 177
      port 0
     }
    }
@@ -2151,7 +2176,7 @@ AudioSignalResClass {
  }
  compiled IOPCompiledClass {
   visited {
-   5125 4997 4869 4741 7687 4613 7815 4485 7559 4357 7431 4229 7303 4101 7175 3973 7047 3845 6919 3717 6407 3589 6535 3461 5639 3333 5767 3205 4999 3077 4871 2949 4231 2821 3847 2693 2565 2437 2309 2181 2053 1925 2315 1797 1669 1541 1413 1285 1157 9607 9739 9867 1029 901 773 1159 645 8327 8071 134 135 8583 1031 8455 8199 6 517 389 261 8971 133 5 8711 3335 1799 518 2951 3599 2567 1158 2823 2183 9487 3215 1671 774 3087 2439 646 2063 3463 1030 1935 2695 902 1287 1419 1547 390 262 7 7947 3731 1286 647 775 519 903 9355 9095 9227 8839 271 6291 3206 6163 2182 5523 2950 5395 1926 5267 2694 4627 1670 4499 2438 3987 1414 399 6803 2310 6675 3334 6035 2054 5907 3078 5139 2822 4755 1798 4371 2566 4115 1542
+   5253 5125 4997 4869 4741 7687 4613 7815 4485 7559 4357 7431 4229 7303 4101 7175 3973 7047 3845 6919 3717 6407 3589 6535 3461 5639 3333 5767 3205 4999 3077 4871 2949 4231 2821 3847 2693 2565 2437 2309 2181 2053 1925 2315 1797 1669 1541 1413 1285 1157 9607 9739 9867 1029 901 773 1159 645 8327 8071 134 135 8583 1031 8455 8199 6 517 389 261 8971 133 5 8711 3335 1799 518 2951 3599 2567 1158 2823 2183 9487 3215 1671 774 3087 2439 646 2063 3463 1030 1935 2695 902 1287 1419 1547 390 262 7 7947 3731 1286 647 775 519 903 9355 9095 9227 8839 271 6291 3206 6167 2182 5523 2950 5399 1926 5267 2694 4631 1670 4499 2438 3991 1414 399 6803 2310 6675 3334 6035 2054 5907 3078 5139 2822 4755 1798 4371 2566 4115 1542
   }
   ins {
    IOPCompiledIn {
@@ -2359,6 +2384,11 @@ AudioSignalResClass {
      17 2031619 2097155 2228227 2293763 2359299 2424835 2621443 2686979 2752515 2818051 3014659 3080195 3145731 3211267 3407875 3473411 4849667
     }
    }
+   IOPCompiledIn {
+    data {
+     4 2031619 2359299 2752515 3145731
+    }
+   }
   }
   ops {
    IOPCompiledOp {
@@ -2518,7 +2548,7 @@ AudioSignalResClass {
    }
    IOPCompiledOp {
     data {
-     1 720898 8 1966081 0 65536 0 2621440 0 131073 0
+     1 720898 10 65536 0 2621440 0 131073 0 2686976 0 1966081 0
     }
    }
    IOPCompiledOp {
@@ -2538,12 +2568,12 @@ AudioSignalResClass {
    }
    IOPCompiledOp {
     data {
-     1 1245186 8 2162689 0 65536 0 2621440 0 131073 0
+     1 1245186 8 65536 0 2621440 0 131073 0 2162689 0
     }
    }
    IOPCompiledOp {
     data {
-     1 851970 8 2490369 0 131073 0 2621440 0 131072 0
+     1 851970 10 131073 0 2621440 0 131072 0 2686976 0 2490369 0
     }
    }
    IOPCompiledOp {
@@ -2573,7 +2603,7 @@ AudioSignalResClass {
    }
    IOPCompiledOp {
     data {
-     1 983042 8 196608 0 131073 0 2621440 0 2949121 0
+     1 983042 10 131073 0 2621440 0 2949121 0 2686976 0 196608 0
     }
    }
    IOPCompiledOp {
@@ -2603,7 +2633,7 @@ AudioSignalResClass {
    }
    IOPCompiledOp {
     data {
-     1 1114114 8 3342337 0 262144 0 2621440 0 131073 0
+     1 1114114 10 262144 0 2621440 0 131073 0 2686976 0 3342337 0
     }
    }
    IOPCompiledOp {
@@ -2889,7 +2919,7 @@ AudioSignalResClass {
     }
    }
   }
-  processed 146
+  processed 147
   version 2
   ins_reeval_list {
    20

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2B9E461CE9ADF8F1}Sounds/_SharedData/Configs/Amplitude/_SharedData/Weapons/Amplitude_-16LUFS_to_-15LUFS_SuppressedSuperSonic.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}
