@@ -53,7 +53,7 @@ AudioClass {
     1 5
    }
    outputsport {
-    2 3 7 9 13
+    2 7 9 13
    }
    inputvalues {
     6160 331.5
@@ -1987,7 +1987,7 @@ AudioClass {
    id 247813
    name "Silence"
    comment "Add PreSilence if projectile is subSonic"
-   version 5
+   version 6
    tl -2352 -240
    ctl 0 -21
    ins {
@@ -2010,7 +2010,7 @@ AudioClass {
   GeneratorClass {
    id 248837
    name "Silence"
-   version 5
+   version 6
    tl -3040.385 -667.916
    function Silence
    time 0
@@ -2018,7 +2018,7 @@ AudioClass {
   GeneratorClass {
    id 284677
    name "Silence"
-   version 5
+   version 6
    tl -3040.385 -2281.232
    ctl 0 -21
    function Silence
@@ -2027,7 +2027,7 @@ AudioClass {
   GeneratorClass {
    id 300037
    name "Silence"
-   version 5
+   version 6
    tl -2592 -2672.428
    ctl 0 -21
    function Silence
@@ -2077,7 +2077,7 @@ AudioClass {
    }
    path "{B764D803219C775E}Sounds/FinalMix.afm"
    inputs {
-    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
    }
   }
  }
@@ -5290,25 +5290,10 @@ AudioClass {
    id 230404
    name "Flesh"
    version 7
-   tl -3040.385 2403.111
-   Volume 9
+   tl -3041.535 2403.111
+   Volume 6
    "Pitch variance" 1.974
    Samples {
-    AudioBankSampleClass Sample {
-     Filename "{667FF1018FF2A2CB}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_01.wav"
-    }
-    AudioBankSampleClass Sample {
-     Filename "{FF6148989215935B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_02.wav"
-     Index 1
-    }
-    AudioBankSampleClass Sample {
-     Filename "{886B201066B77C2B}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_03.wav"
-     Index 2
-    }
-    AudioBankSampleClass Sample {
-     Filename "{8FACDA410031C6E8}Sounds/Weapons/_SharedData/BulletHits/samples/Weapons_BulletHit_Local_FleshGeneric_04.wav"
-     Index 3
-    }
     AudioBankSampleClass Sample {
      Filename "{1DEF76B49F736B23}Sounds/Weapons/_SharedData/BulletHits/samples/flesh_hi.wav"
      Index 4
